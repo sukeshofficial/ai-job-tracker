@@ -1,0 +1,30 @@
+{
+  "name": "ai-job-tracker",
+  "version": "1.0.0",
+  "description": "A smart AI-powered platform to:",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && mvn spring-boot:run",
+    "ai": "cd ai-service && .\\.venv\\Scripts\\activate && uvicorn app.main:app --reload",
+    "dev": "concurrently -n CLIENT,SERVER,AI -c blue,green,magenta \"npm run client\" \"npm run server\" \"npm run ai\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sukeshofficial/ai-job-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sukeshofficial/ai-job-tracker/issues"
+  },
+  "homepage": "https://github.com/sukeshofficial/ai-job-tracker#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

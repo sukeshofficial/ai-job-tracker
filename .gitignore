@@ -1,0 +1,35 @@
+# dependencies
+node_modules/
+
+# env
+.env
+.env.*
+
+# logs
+logs
+*.log
+
+# frontend
+frontend/dist
+frontend/.vite
+
+# java
+backend-java/target/
+backend-java/.mvn/
+*.class
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# mac
+.DS_Store
+
+# database
+*.db
