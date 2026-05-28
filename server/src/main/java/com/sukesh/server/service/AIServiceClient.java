@@ -10,6 +10,7 @@ public class AIServiceClient {
 
   private final WebClient webClient = WebClient.create("http://localhost:8000");
 
+  @SuppressWarnings("rawtypes")
   public Map getHealth() {
 
     return webClient.get()

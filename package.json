@@ -8,7 +8,7 @@
   },
   "scripts": {
     "client": "cd client && npm run dev",
-    "server": "cd server && mvn spring-boot:run",
+    "server": "cd server && mvnw spring-boot:run",
     "ai": "cd ai-service && .\\.venv\\Scripts\\activate && uvicorn app.main:app --reload",
     "dev": "concurrently -n CLIENT,SERVER,AI -c blue,green,magenta \"npm run client\" \"npm run server\" \"npm run ai\""
   },
